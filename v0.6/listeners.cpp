@@ -1,0 +1,92 @@
+#include "listeners.h"
+#include <QMessageBox>
+
+Listeners::Listeners(QObject *parent) :
+    QObject(parent),
+    wnd(0)
+{
+    wnd=static_cast<MainWindow*>(parent);
+}
+
+void Listeners::triggered()
+{
+    QObject * object = QObject::sender();
+    if (!object)
+        return;
+
+    QAction * action = static_cast<QAction *>(object);
+    if(action==wnd->actionConnection)
+    {
+        wnd->conui->setModal(true);
+        wnd->conui->show();
+    }else if(action==wnd->actionDisconnect)
+    {
+        wnd->actionConnection->setEnabled(true);
+        wnd->actionDisconnect->setEnabled(false);
+
+        wnd->SendButton->setEnabled(false);
+
+        if(wnd->server)
+        {
+            wnd->server->close();
+            delete wnd->server;
+            wnd->server=NULL;
+
+            wnd->isconnectionclosed=true;
+            wnd->progress->setModal(true);
+            wnd->progress->show();
+            QString temp;
+            temp="http://coder.pusku.com/projects/QTCPChat/server.php?delHost=1&&host=";
+            temp+=wnd->Host+"&&pass="+wnd->Password;
+            temp+=QString("&port=%1").arg(wnd->Port);
+            wnd->RegisterOnServer(temp);
+        }
+        if(wnd->client)
+        {
+            wnd->client->close();
+            delete wnd->client;
+            wnd->client=NULL;
+            wnd->TypeLabel->setText("Type: unknown");
+            wnd->statusLabel->setText("Status: close");
+        }
+
+    }else if(action==wnd->actionRestore)
+    {
+        wnd->showNormal();
+        wnd->tray->hide();
+    }
+}
+
+void Listeners::clicked()
+{
+    QObject * object = QObject::sender();
+    if (!object)
+        return;
+
+    QPushButton * button = static_cast<QPushButton *>(object);
+    if(button==wnd->SendButton)
+    {
+
+        wnd->workEdit->setTextColor(QColor(40,200,40));
+        QString text=QDateTime::currentDateTime().toString("hh:mm:ss");
+        text+=" ";
+        text+=wnd->messageEdit->text();
+        wnd->workEdit->append(text);
+        if (wnd->firstSocket) {
+            wnd->firstSocket->write(wnd->messageEdit->text().toLocal8Bit());
+        }
+
+    }
+}
+
+void Listeners::changeEvent(QEvent *event)
+{
+    if(event->type()==QEvent::WindowStateChange)
+    {
+        if(wnd->isMinimized()==true)
+        {
+            wnd->tray->show();
+            wnd->hide();
+        }
+    }
+}

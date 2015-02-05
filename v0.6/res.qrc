@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/images/tray">
+        <file>Resources/offline.png</file>
+        <file>Resources/online.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>Resources/newmessage.wav</file>
+    </qresource>
+</RCC>
