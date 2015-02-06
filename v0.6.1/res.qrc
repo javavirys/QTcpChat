@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/images/tray">
+        <file>Resources/offline.png</file>
+        <file>Resources/online.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>Resources/newmessage.wav</file>
+    </qresource>
+    <qresource prefix="/images/mainwindow">
+        <file>Resources/icon.png</file>
+        <file>Resources/connect.png</file>
+        <file>Resources/disconnect.png</file>
+        <file>Resources/quit.png</file>
+        <file>Resources/revert.png</file>
+        <file>Resources/about.png</file>
+    </qresource>
+</RCC>
