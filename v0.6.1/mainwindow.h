@@ -1,3 +1,6 @@
+/*
+ *                            Главное окно программы                               *
+*/
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
@@ -7,16 +10,14 @@
 #include "progressdialog.h"
 #include "listeners.h"
 
+#include <QLineEdit>
 #include <QCloseEvent>
-
 #include <QSystemTrayIcon>
 #include <QIcon>
-
 #include <QLabel>
 #include <QTextEdit>
-#include <QLineEdit>
 #include <QPushButton>
-
+#include <QCloseEvent>
 #include <QtNetwork>
 
 namespace Ui {
