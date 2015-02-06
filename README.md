@@ -1,4 +1,4 @@
-# QTcpChat #
+ï»¿# QTcpChat #
 ###### eng ######
 This is a program to create a chat between computers, QTCPChat works on sockets without intermediaries, which allows you to exchange messages instantly.
 ### Requirements: ###
@@ -6,7 +6,7 @@ This is a program to create a chat between computers, QTCPChat works on sockets 
 >>Connecting to the Internet
 
 ###### rus ######
-Ýòî ïðîãðàììà äëÿ ñîçäàíèÿ ÷àòà ìåæäó êîìïüþòåðàìè,QTCPChat ðàáîòàåò íà ñîêåòàõ áåç ïîñðåäíèêîâ , ÷òî ïîçâîëÿåò îáìåíèâàòüñÿ ñîîáùåíèÿìè ïðàêòè÷åñêè ìãíîâåííî
-### Òðåáîâàíèÿ: ###
+Ð­Ñ‚Ð¾ Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ð° Ð´Ð»Ñ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ñ‡Ð°Ñ‚Ð° Ð¼ÐµÐ¶Ð´Ñƒ ÐºÐ¾Ð¼Ð¿ÑŒÑŽÑ‚ÐµÑ€Ð°Ð¼Ð¸,QTCPChat Ñ€Ð°Ð±Ð¾Ñ‚Ð°ÐµÑ‚ Ð½Ð° ÑÐ¾ÐºÐµÑ‚Ð°Ñ… Ð±ÐµÐ· Ð¿Ð¾ÑÑ€ÐµÐ´Ð½Ð¸ÐºÐ¾Ð² , Ñ‡Ñ‚Ð¾ Ð¿Ð¾Ð·Ð²Ð¾Ð»ÑÐµÑ‚ Ð¾Ð±Ð¼ÐµÐ½Ð¸Ð²Ð°Ñ‚ÑŒÑÑ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸ÑÐ¼Ð¸ Ð¿Ñ€Ð°ÐºÑ‚Ð¸Ñ‡ÐµÑÐºÐ¸ Ð¼Ð³Ð½Ð¾Ð²ÐµÐ½Ð½Ð¾
+### Ð¢Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð¸Ñ: ###
 >>Qt5.3
->>Ïîäêëþ÷åíèå ê èíòåðíåòó
+>>ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ðº Ð¸Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚Ñƒ
