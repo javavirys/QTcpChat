@@ -4,8 +4,6 @@
 #include <QMessageBox>
 #include <QDateTime>
 
-#include <QDialog>
-
 #include <QSound>
 
 MainWindow::MainWindow(QWidget *parent) :
