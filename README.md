@@ -1,4 +1,6 @@
 ﻿# QTcpChat #
+######[Web-pages](http://java-virys.narod.ru/ "javavirys")######
+
 ###### eng ######
 This is a program to create a chat between computers, QTCPChat works on sockets without intermediaries, which allows you to exchange messages instantly.
 ### Requirements: ###
