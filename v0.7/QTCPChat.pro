@@ -33,4 +33,4 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     res.qrc
-RC_FILE = icon.rc
+win32:RC_FILE = icon.rc
